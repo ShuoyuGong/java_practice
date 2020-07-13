@@ -8,7 +8,7 @@ public class ConstantDemo {
     System.out.println('A');
     // 输出布尔常量
     System.out.println(true);
-    // 输出字符串常量
+    // 输出字符串常�?
     System.out.println("你好JAVA");
   }
 }
