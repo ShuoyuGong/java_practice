@@ -443,7 +443,41 @@
         4.4.2 打印集合方法(PrintCollection.java)
         4.4.3 获取集合方法(GetCollecction.java)
 
-
+============================day_7===============================String类、static关键字、Arrays类、Math类
+0.学习目标
+    1.String类
+    2.static关键字
+    3.Arrays类
+    4.Math类
+1.String类
+    1.1 String类概述
+        java.lang.String类代表字符串，java程序中所有的字符串文字，(例如"abc"),都可以看作此类的实例
+        类String包括用于检查各个字符串的方法，比如比较字符串，搜索字符串，提取字符串以及创建具有翻译为大些或小写的所有字符的字符串副本
+    1.2 特点
+        1.2.1 字符串不变：字符串的值在创建后不能更改
+            String s1 = "abc";
+            s1 += "d";
+            System.out.println(s1);
+            内存中有"abc","abcd"两个对象，s1从指向"abc",改变指向,改指向了"abcd"
+        1.2.2 因为String是不可变的，所以他们可以被共享
+            String s1 = "abc";
+            String s2 = "sbc";
+            内存中只有一个"abc"被创建,同时被s1和s2共享
+        1.2.3 "abc"等效于char[] data = {'a','b','c'}
+            例如：
+                String str = "abc";
+            相当于：
+                char data[] = {'a','b','c'};
+                String str = new String(data);
+            String底层是依靠字符数组实现的
+    1.3 使用步骤
+        1.3.1 查看类 
+            java.lang.String; 此类不需要导入
+        1.3.2 查看构造方法
+            public String() 初始化新创建的String对象，以使其表示空字符序列
+            public String(char[] value) 通过当前参数中的字符数组来构造新的String
+            public String(byte[] value) 通过使用平台的默认字符集编码当前参数中的字节数组来构造新的String
+            构造举例(ExamplesOfConstruction.java)
 
 
 
