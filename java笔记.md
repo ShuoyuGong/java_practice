@@ -305,6 +305,160 @@
     13.2(ChangeArray1.java)
     总结：方法的参数为基本类型时，传递的是数据值，方法的参数为引用类型时，传递的是地址值
 
+============================day_5===============================类与对象，封装，构造方法
+0.学习目标
+    1.面向对象
+    2.类与对象
+    3.三大特征--封装
+    4.构造方法
+1.对象的特点
+    面向对象思想是一种更符合我们思考习惯的思想，它可以将复杂的事情简单化，并将我们从执行者变成了指挥者。面向对象的语言中，包含了三大基本特征-->封装、继承、多态
+2.什么是类
+    类：是一组相关属性和行为的集合。可以看成是一类事物的模版，使用事物的属性、特征和行为来描述该类事物
+    属性：该事物的状态信息
+    行为：该事物能够做什么
+3.类与对象的关系
+    类是对一类事物的描述，是抽象的
+    对象是一类事物的实例，是具体的
+    类是对象的模版，对象是类的实体
+4.类的定义格式(Class.java)
+    public class ClassName{
+        //成员方法
+        //成员变量
+    }
+    定义类：就是定义类的成员，包括成员变量和成员方法
+    成员变量：和以前定义变量几乎一样，只不过位置发生了改变，在类中，方法外
+    成员方法：和以前定义变量几乎一样，只不过把static去掉
+5.对象的使用(Class.java,Student.java)
+    5.1对象使用的格式
+        创建对象：类名  对象名  =  new 类名();
+        使用对象访问类中的成员：对象名.成员变量;   对象名.成员方法();
+    5.2类与对象的练习(Phone.java,Test_01.java)
+6.封装
+    1.步骤：
+        使用private关键字来修饰成员变量
+        对需要访问的成员变量。提供对应的一对getXXX方法，setXXX方法
+    2.封装的操作
+        2.1private的含义
+            private是一个权限修饰符，代表最小权限
+            可以修饰成员变量和成员方法
+            被private修饰后的成员变量和成员方法，只有在本类中才能访问
+        2.2private的使用格式(Encapsulation.java)
+            private 数据类型  变量名;
+    3.构造方法
+        当一个对象被创建的时候，构造方法用来初始化该对象，给对象的成员变量赋初始值
+        定义格式：(Structure.java)
+            修饰符  构造方法名  (参数列表){
+                方法体
+            }
+
+============================day_6===============================Scanner类、Random类、ArrayList类
+0.学习目标
+    1.API概述
+    2.Scanner类
+    3.Random类
+    4.ArrayList类
+1.API概述
+    API(Application Programming Interface)，应用程序编程接口。java API是程序员的字典，是JDK中提供给我们使用的类的说明文档，这些类将底层的代码实现
+    封装了起来，我们不需要关心这些类是如何实现的，只需要学习这些类如何使用即可。
+2.Scanner类
+    2.1什么是Scanner类
+        一个可以解析基本类型和字符串简单文本扫描器，例如，以下代码使用户能够从System.in中读取一个数
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+    2.2引用类型使用步骤
+        导包：使用import关键字导包，在类中所有代码之前导包，java.lang包下的所有类无需导入
+        格式：import 包名.类名;
+        举例：java.util.Scanner;
+        创建对象：使用该类的构造方法，创建一个该类的对象
+        格式：数据类型 变量名 = new 数据类型(参数列表)
+        举例：Scanner sc = new Scanner(System.in);
+        调用方法：调用该类的成员方法，完成执行功能
+        变量名.方法名();
+        举例：int i = sc.nextInt();//接收上一个键盘录入的整数
+    2.3Scanner使用步骤
+        2.3.1 查看类
+                java.util.Scanner：该类需要import导入使用
+        2.3.2 查看构造方法
+                public Scanner(InputStream source)：构造一个新的Scanner,它生成的值是从指定的输入流扫描的
+        2.3.3 查看成员方法
+                public int nextInt():将输入信息的下一个标记扫描为一个int值
+        2.3.4 练习(PracticeScanner.java)
+        2.3.5 练习(ScannerSum.java)
+        2.3.6 练习(ScannerMax.java)
+    2.4匿名对象
+        概念：创建对象时，只有创建对象的语句，却没有把对象地址赋值给某个变量。虽然是创建对象的简化写法，但是应用场景非常有限
+        格式：new 类名(参数列表);
+        举例：new Scanner(System.in);
+        应用场景
+            1.创建匿名对象直接调用方法，没有变量名
+                new Scanner(System.in).nextInt();
+            2.一旦调用两次方法，就是创建了两个对象，造成浪费
+                new Scanner(System.in).nextInt();
+                new Scanner(System.in).nextInt();
+            3.一个匿名对象只能，只能调用一次
+            4.匿名对象可以作为方法的参数和返回值
+                2.4.4.1 作为参数(AsValue.java)
+                2.4.4.2 作为返回值(AsReturnValue.java)
+3.Random类
+    3.1 定义：此类的实例用于生成伪随机数
+    3.2 Random使用步骤
+        3.2.1 查看类
+            java.util.Random 该类需要import导入后使用
+        3.2.2 查看构造方法
+            public Random() 创建一个新的随机数生成器
+        3.2.3 查看成员方法
+            public int nextInt(int n) 返回一个伪随机数，范围在包括0和指定值不包括n之间的int值
+        3.2.4 使用Random类，完成生成3个10以内的随机整数的操作(Random_0.java)  
+        3.2.5 使用Random类，获取1-n之间的随机数，包含n(Random_1.java)
+        3.2.6 猜数字小游戏(GuessNumber.java)
+4.ArrayList类
+    4.1 引入----对象数组 使用学生数组，存储3个学生对象(Student_1.java,Use_Student_1.java)
+    4.2 什么是ArrayList类
+        java.util.ArrayList是大小可变得数组得实现，存储在内的数据称为元素。此类提供一些方法来操作内部存储的元素，
+        ArrayList中可不断添加元素，其大小也自动增长
+    4.3 ArrayList使用步骤
+        4.3.1 查看类
+            java.util.ArrayList <E>:该包需要导入后使用
+            <E>表示一种数据类型，叫做泛型，E，取自Element(元素)的首字母，在出现E的地方，我们使用一种引用数据类型将其替换即可，表示我们将存储哪种引用类型的
+            元素，代码如下：
+                ArrayList<String>,ArrayList<Student>
+        4.3.2 查看构造方法
+            public ArrayList()：构造一个内容为空的集合
+            基本格式：ArrayList<String> list = new ArrayList<String>();
+            在jdk7后，右侧泛型的尖括号之内可以留空，但是<>仍然要写，简写格式：ArrayList<String> list = new ArrayList<>();
+        4.3.3 查看成员方法
+            public boolean add(E e):将指定元素添加到此集合的尾部
+            参数 E e，在构造ArrayList对象时，<E>指定了什么数据类型，那么add<E e>方法中，只能添加什么数据类型的对象
+        4.4.4 使用ArrayList类，存储三个字符串元素(ArrayList_0.java)
+        4.4.5 常用方法和遍历(ArrayList_1.java)
+            对于元素的操作，基本体现在增，删，查
+            public boolean add(E e):将指定的元素添加到此集合的尾部
+            public E remove(int index)：移除此集合指定位置上的元素，返回被删除的元素
+            public E get(int index):返回此集合中指定位置上的元素，返回获取的元素
+            public int size():返回此集合中的元素数，遍历集合时，可以控制索引范围，防止越界
+            
+    4.4 ArrayList练习
+        4.4.1 将随机数添加到数组集合(Random_ArrayList.java)
+        4.4.2 打印集合方法(PrintCollection.java)
+        4.4.3 获取集合方法(GetCollecction.java)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
