@@ -478,7 +478,36 @@
             public String(char[] value) 通过当前参数中的字符数组来构造新的String
             public String(byte[] value) 通过使用平台的默认字符集编码当前参数中的字节数组来构造新的String
             构造举例(ExamplesOfConstruction.java)
-
+        1.3.3 判断功能的方法(JudgmentComparison.java)
+            public boolean equals (Object anObject) ：将此字符串与指定对象进行比较
+            public boolean equalsIgnoreCase(String anotherString) :将此字符串与指定对象比较，忽略大小写
+        1.3.4 获取功能的方法(GetFunction.java)
+            public int length():返回此字符串的长度
+            public String concat (String str):将指定的字符串连接到该字符串的结尾
+            public char charAt(int index):返回指定索引的char值
+            public int indexOf(String str):返回指定子字符串第一次出现在该字符串内的索引
+            public String substring (int beginIndex):返回一个子字符串，从beginIndex开始截取字符串至字符串结尾
+            public String substring(int beginIndex,int endIndex):返回一个字符串，从beginIndex到endIndex截取字符串，含beginIndex,不含endIndex
+        1.3.5 转换功能的方法(ConversionFunction.java)
+            public char[] toCharArray():将此字符串转换为新的字符数组
+            public byte[] getBytes():使用平台的默认字符集将该String编码转换为新的字节数组
+            public String replace (Charsequence target,Charsequence replcement()):将此target匹配的字符串使用replcement字符串替换
+        1.3.6 分割功能方法(SplitFunction.java)
+            public String[] split(String regex):将此字符串按照指定的regex(规则)拆分为字符串数组
+    1.4 使用类练习
+        1.4.1 拼接字符串(ConcatenatedString.java)
+        1.4.2 统计字符串(StatisticsString.java)
+2.Static关键字
+    2.1 概述
+        关于static关键字的使用，它可以用来修饰的成员变量和成员方法，被修饰的成员是属于类的，而不是单单是属于某个对象的，也就是说，既然属于类，就可以不靠
+        创建对象来调用了
+    2.2 定义和使用格式
+        当static修饰成员变量时，该变量称为类变量，该类的每个对象都共享同一个类变量的值，任何对象都可以更改该类变量的值，但也可以在不创建该类的情况下对类
+        变量进行操作
+        类变量:使用static修饰的变量
+        举例：static int numberID (StaticVariable.java)
+        
+            
 
 
 
