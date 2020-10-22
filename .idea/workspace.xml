@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="768bb7bf-f028-479b-9896-23e105c4cc98" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/ConcatenatedString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/ConversionFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/GetFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/JudgmentComparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/SplitFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/StatisticsString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/day_7/Student1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="768bb7bf-f028-479b-9896-23e105c4cc98" name="默认更改列表" comment="20201014">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/day_7/Diaoyong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/day_7/StaticCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/day_7/StaticVariable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/java笔记.md" afterDir="false" />
     </list>
@@ -42,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://G:/java_practice/Basics/day_6/Student_1.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -49,7 +48,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="应用程序.ConcatenatedString">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Diaoyong">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -57,16 +61,16 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="ConcatenatedString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConcatenatedString" />
+    <configuration name="ConversionFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConversionFunction" />
       <module name="Basics" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConversionFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConversionFunction" />
+    <configuration name="Diaoyong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Diaoyong" />
       <module name="Basics" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -103,17 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -140,12 +133,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.ConcatenatedString" />
       <item itemvalue="应用程序.ConversionFunction" />
       <item itemvalue="应用程序.GetFunction" />
       <item itemvalue="应用程序.SplitFunction" />
       <item itemvalue="应用程序.StatisticsString" />
+      <item itemvalue="应用程序.Diaoyong" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Diaoyong" />
+        <item itemvalue="应用程序.StatisticsString" />
+        <item itemvalue="应用程序.SplitFunction" />
+        <item itemvalue="应用程序.GetFunction" />
+        <item itemvalue="应用程序.ConversionFunction" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
     <queries />
@@ -183,7 +185,9 @@
       <workItem from="1602679417367" duration="7000" />
       <workItem from="1602679461358" duration="70000" />
       <workItem from="1602679832845" duration="67000" />
-      <workItem from="1602679941446" duration="1264000" />
+      <workItem from="1602679941446" duration="1524000" />
+      <workItem from="1603364475009" duration="812000" />
+      <workItem from="1603365305423" duration="2205000" />
     </task>
     <task id="LOCAL-00001" summary="2020-09-27">
       <created>1601212952513</created>
@@ -199,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601215930035</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20201014">
+      <created>1602681228891</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602681228891</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,13 +219,50 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="once" />
     <MESSAGE value="2020-09-27" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020-09-27" />
+    <MESSAGE value="20201014" />
+    <option name="LAST_COMMIT_MESSAGE" value="20201014" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="180" key="#Plugins" timestamp="1603365314064">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="180" key="#Plugins/0.0.1920.1080@0.0.1920.1080" timestamp="1603365314064" />
+    <state x="730" y="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603366451043">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="730" y="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1603366451043" />
+    <state x="631" y="103" key="CommitChangelistDialog2" timestamp="1602681228046">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="631" y="103" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1602681228046" />
+    <state width="482" height="912" key="GridCell.Tab.0.bottom" timestamp="1603367512164">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="482" height="912" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603367512164" />
+    <state width="482" height="912" key="GridCell.Tab.0.center" timestamp="1603367512164">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="482" height="912" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603367512164" />
+    <state width="482" height="912" key="GridCell.Tab.0.left" timestamp="1603367512164">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="482" height="912" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603367512164" />
+    <state width="482" height="912" key="GridCell.Tab.0.right" timestamp="1603367512164">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="482" height="912" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603367512164" />
+    <state x="540" y="274" key="IDE.errors.dialog" timestamp="1602681348975">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="274" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602681348975" />
     <state x="239" y="184" width="1220" height="712" key="SettingsEditor" timestamp="1602680085522">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="239" y="184" width="1220" height="712" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602680085522" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1602681242159">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602681242159" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602680103256">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

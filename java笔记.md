@@ -505,7 +505,10 @@
         当static修饰成员变量时，该变量称为类变量，该类的每个对象都共享同一个类变量的值，任何对象都可以更改该类变量的值，但也可以在不创建该类的情况下对类
         变量进行操作
         类变量:使用static修饰的变量
-        举例：static int numberID (StaticVariable.java)
+        举例：static int numberID (Diaoyong.java,StaticVariable.java)
+    2.3 静态代码块
+        给类变量进行初始化赋值(StaticCode.java)
+        
         
             
 
