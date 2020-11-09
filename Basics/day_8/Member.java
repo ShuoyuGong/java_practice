@@ -9,7 +9,7 @@ public class Member extends User {
     }
 
 //    打开红包
-    public void openHB(ArrayList<Double> list){
+    public void openhb(ArrayList<Double> list){
 //        创建random对象
         Random r  = new Random();
 //        随机生成一个角标

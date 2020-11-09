@@ -26,9 +26,9 @@ public class Test {
         Member m1 = new Member();
         Member m2 = new Member();
 //        打开红包
-        m.openHB(sendList);
-        m1.openHB(sendList);
-        m2.openHB(sendList);
+        m.openhb(sendList);
+        m1.openhb(sendList);
+        m2.openhb(sendList);
 
         qz.show();
         m.show();
